@@ -17,8 +17,8 @@ dependencyResolutionManagement {
         maven {
             url  = uri("https://repo.routaa.ir/repository/maven-routaa-public")
             credentials {
-                username = project.hasProperty('ROUTAA_MAVEN_USERNAME') ? project.property('ROUTAA_MAVEN_USERNAME') : System.getenv('ROUTAA_MAVEN_USERNAME')
-                password = project.hasProperty('ROUTAA_MAVEN_PASSWORD') ? project.property('ROUTAA_MAVEN_PASSWORD') : System.getenv('ROUTAA_MAVEN_PASSWORD')
+                username = System.getenv("ROUTAA_MAVEN_USERNAME") ?: project.property("ROUTAA_MAVEN_USERNAME") as String
+                password = System.getenv("ROUTAA_MAVEN_PASSWORD") ?: project.property("ROUTAA_MAVEN_PASSWORD") as String
             }
         }
         google()
