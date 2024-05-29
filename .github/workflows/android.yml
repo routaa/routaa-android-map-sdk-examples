@@ -22,9 +22,8 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    - name: acquiring secrets
-      env:
-          ROUTAA_MAVEN_USERNAME: ${{ secrets.ROUTAA_MAVEN_USERNAME }}
-          ROUTAA_MAVEN_PASSWORD: ${{ secrets.ROUTAA_MAVEN_PASSWORD }}
     - name: Build with Gradle
       run: ./gradlew build
+      env:
+        ROUTAA_MAVEN_USERNAME: ${{ secrets.ROUTAA_MAVEN_USERNAME }}
+        ROUTAA_MAVEN_PASSWORD: ${{ secrets.ROUTAA_MAVEN_PASSWORD }}
