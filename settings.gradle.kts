@@ -14,6 +14,13 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        maven {
+            url  = uri("https://repo.routaa.ir/repository/maven-routaa-public")
+            credentials {
+                username = ""
+                password = ""
+            }
+        }
         google()
         mavenCentral()
     }
