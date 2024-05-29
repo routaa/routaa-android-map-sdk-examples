@@ -26,8 +26,5 @@ jobs:
       env:
           ROUTAA_MAVEN_USERNAME: ${{ secrets.ROUTAA_MAVEN_USERNAME }}
           ROUTAA_MAVEN_PASSWORD: ${{ secrets.ROUTAA_MAVEN_PASSWORD }}
-      run: echo ROUTAA_MAVEN_USERNAME=\"$ROUTAA_MAVEN_USERNAME\" > ./gradle.properties &&
-       echo ROUTAA_MAVEN_PASSWORD=\"$ROUTAA_MAVEN_PASSWORD\" > ./gradle.properties &&
-       cat ./gradle.properties
     - name: Build with Gradle
       run: ./gradlew build
