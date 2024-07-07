@@ -26,7 +26,7 @@ First, you need to add the Routaa Maven repository to your `build.gradle (projec
 You also need to add routaa map sdk dependency to your `build.grade (module:app)` file
 
     dependencies {  
-		implementation("com.routaa.maps:android:1.7.0")  
+		implementation("com.routaa.maps:android:1.7.6")  
     }
 Then add your API Key to `strings.xml`
 
@@ -39,4 +39,9 @@ Add the MapView in your XML layout file:
       android:layout_width="match_parent"  
       android:layout_height="match_parent"  
       android:id="@+id/mapView"/>
+
+Add the following line within your activity's onCreate method to load your desired map style:
+    
+    mapView.getMapboxMap().loadMapStyle(RoutaaMapStyle.Day_Silvan)
+
 

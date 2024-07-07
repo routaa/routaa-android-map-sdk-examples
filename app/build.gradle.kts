@@ -42,7 +42,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation("com.routaa.maps:android:1.7.0")
+    implementation("com.routaa.maps:android:1.7.6")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
