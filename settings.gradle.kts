@@ -17,7 +17,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url  = uri("https://repo.routaa.ir/repository/maven-routaa-public")
+            url  = uri("https://repo.mtyn.ir/repository/maven-routaa-public")
             credentials {
                 username = System.getenv("ROUTAA_MAVEN_USERNAME") as String
                 password = System.getenv("ROUTAA_MAVEN_PASSWORD") as String

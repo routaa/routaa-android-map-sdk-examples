@@ -17,7 +17,7 @@ Before running the examples, make sure you have the following:
 First, you need to add the Routaa Maven repository to your `build.gradle (project)` file
 
     maven {  
-	     url = uri("https://repo.routaa.ir/repository/maven-routaa-public")  
+	     url = uri("https://repo.mtyn.ir/repository/maven-routaa-public")  
 	     credentials {  
            username = "YOUR_MAVEN_USERNAME"  
 	       password = "YOUR_MAVEN_PASSWORD"  
